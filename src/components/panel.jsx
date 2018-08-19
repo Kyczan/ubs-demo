@@ -5,7 +5,7 @@ class Panel extends Component {
   state = this.props.panel;
   render() {
     return (
-      <div className="col-3">
+      <div className="col-lg-3 col-sm-4">
         <div className="card panel">
           <div className="panel-title">{this.state.pair}</div>
           <div className="row no-gutters panel-data">
