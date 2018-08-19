@@ -78,6 +78,18 @@
   position: relative;
 }
 .panel-indicator {
-  width: 4%;
-  text-align: center;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+.panel-indicator-up {
+  border-color: transparent transparent #68892e transparent;
+  border-width: 0 4px 20px 4px;
+}
+.panel-indicator-down {
+  border-width: 20px 4px 0 4px;
+  border-color: #c9131a transparent transparent transparent;
+}
+.panel-indicator-none {
+  width: 8px;
 }

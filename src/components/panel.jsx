@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import './panel.css';
+import '../styles/panel.css';
 
 class Panel extends Component {
   state = this.props.panel;
   render() {
     return (
-      <div className="col-lg-3 col-sm-4">
+      <div className="col-lg-3 col-md-4 col-sm-6">
         <div className="card panel">
           <div className="panel-title">{this.state.pair}</div>
           <div className="row no-gutters panel-data">
@@ -19,7 +19,7 @@ class Panel extends Component {
                 </div>
               </div>
             </div>
-            <div className="panel-indicator">^</div>
+            <div className={this.getIndicatorClass()} />
             <div className="panel-badge-wrapper">
               <div className="panel-badge-outline panel-badge-outline-buy">
                 <div className="panel-badge panel-badge-buy">
@@ -34,6 +34,14 @@ class Panel extends Component {
         </div>
       </div>
     );
+  }
+
+  getIndicatorClass() {
+    const cls = 'panel-indicator';
+    if (this.state.isUp === 'const') return 'panel-indicator-none';
+    return this.state.isUp
+      ? cls + ' panel-indicator-up'
+      : cls + ' panel-indicator-down';
   }
 
   getFirstCurr() {
