@@ -1,0 +1,83 @@
+.panel {
+  background-color: #f0f0f1;
+}
+.panel-title {
+  background-color: #5b5b5c;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.panel-data {
+  margin-bottom: 30px;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.panel-badge-wrapper {
+  width: 48%;
+}
+.panel-badge {
+  background-color: white;
+  padding: 2px;
+  font-size: 18px;
+}
+.panel-badge-outline {
+  position: relative;
+  width: 100%;
+  height: 60px;
+  background: #f0f0f1;
+  clip-path: polygon(70% 0, 100% 45%, 100% 55%, 70% 100%, 0 100%, 0 0);
+}
+.panel-badge-outline-sell {
+  clip-path: polygon(70% 0, 100% 45%, 100% 55%, 70% 100%, 0 100%, 0 0);
+}
+.panel-badge-outline-buy {
+  clip-path: polygon(30% 0, 100% 0, 100% 100%, 30% 100%, 0 55%, 0 45%);
+}
+.panel-badge-outline:hover {
+  background: #4bacc6;
+}
+.panel-badge:hover {
+  color: white;
+}
+.panel-badge-sell {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  right: 2px;
+  bottom: 2px;
+  clip-path: polygon(70% 0, 100% 45%, 100% 55%, 70% 100%, 0 100%, 0 0);
+  color: #c9131a;
+}
+
+.panel-badge-sell:hover {
+  background-color: #ff0000;
+}
+.panel-badge-buy {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  right: 2px;
+  bottom: 2px;
+  clip-path: polygon(30% 0, 100% 0, 100% 100%, 30% 100%, 0 55%, 0 45%);
+  text-align: right;
+  color: #68892e;
+}
+.panel-badge-buy:hover {
+  background-color: #7fd13b;
+}
+.panel-badge-title {
+  font-size: 10px;
+}
+.panel-badge-value-mid {
+  font-size: 30px;
+  font-weight: bold;
+}
+.panel-badge-value-end {
+  top: -8px;
+  position: relative;
+}
+.panel-indicator {
+  width: 4%;
+  text-align: center;
+}
